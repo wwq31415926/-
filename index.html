@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="https://api.iconify.design/noto:firecracker.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>2025 乙巳年·运势</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'cinnabar': '#C20E0E',   // Zhu Sha Hong
+              'amber-gold': '#FFBF00', // Hu Po Jin
+              'rice-paper': '#F9F4E8', // Xuan Zhi
+              'ink-black': '#1A1A1A',  // Mo Hei
+              'jade': '#2F5C56',       // Fei Cui
+              'rouge': '#91181F',      // Yan Zhi
+              'oriental-blue': '#2C4C66' // Dai Lan
+            },
+            fontFamily: {
+              serif: ['"Ma Shan Zheng"', 'serif'], // Calligraphy
+              sans: ['"Noto Sans SC"', 'sans-serif'], // Body
+            },
+            backgroundImage: {
+              'grain': "url('https://www.transparenttextures.com/patterns/stardust.png')", 
+              'cloud-pattern': "url('https://www.transparenttextures.com/patterns/chinese-new-year.png')" 
+            },
+            boxShadow: {
+              'gold-glow': '0 0 15px rgba(255, 191, 0, 0.5)',
+              'ink-shadow': '0 10px 30px -10px rgba(0, 0, 0, 0.5)',
+            },
+            animation: {
+              'float-slow': 'float 8s ease-in-out infinite',
+              'pulse-gold': 'pulse-gold 2s infinite',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(0) rotate(0deg)' },
+                '50%': { transform: 'translateY(-15px) rotate(2deg)' },
+              },
+              'pulse-gold': {
+                '0%, 100%': { boxShadow: '0 0 0 0 rgba(255, 191, 0, 0.4)' },
+                '70%': { boxShadow: '0 0 0 10px rgba(255, 191, 0, 0)' },
+              }
+            }
+          },
+        },
+      }
+    </script>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        overscroll-behavior: none;
+        -webkit-tap-highlight-color: transparent;
+        background-color: #91181F;
+      }
+      .writing-vertical {
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+      }
+      .texture-overlay {
+        position: absolute;
+        inset: 0;
+        background-image: url('https://www.transparenttextures.com/patterns/cream-paper.png');
+        opacity: 0.4;
+        pointer-events: none;
+        mix-blend-mode: multiply;
+      }
+      /* Hide scrollbar */
+      ::-webkit-scrollbar {
+        width: 0px;
+        background: transparent;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.25",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "canvas-confetti": "https://aistudiocdn.com/canvas-confetti@^1.9.4",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0",
+    "html2canvas": "https://aistudiocdn.com/html2canvas@^1.4.1"
+  }
+}
+</script>
+</head>
+  <body class="text-rice-paper overflow-hidden">
+    <div id="root"></div>
+  </body>
+</html>
